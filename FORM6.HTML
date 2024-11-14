@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <style>
+        .form-group{
+           border : 3px solid yellow;
+            max-width: max-content;
+            padding: 40px 100px;
+            margin: 10px auto;
+            background-color: aqua;
+        }
+        .input[type=button]{
+            display: block;
+            background-color: blanchedalmond;
+            margin: 0 auto;
+            margin-top: 8px;
+            height: 45px;
+            width: 100px;
+            border-radius: 20px;
+            font-size: 17px;
+            font-family: cursive;
+        }
+        .Radio{
+            color:brown;
+        }
+        .checkbox{
+            color:orange;
+        }
+        .title{
+            color: red;
+        }
+        .button2{
+            height: 40px;
+            width: 120px;
+            border: 3px solid green;
+            border-radius: 25px;
+            background-color: blueviolet;
+            color: chartreuse;
+            font-size: 20px;
+
+            
+        }
+        .l1{
+            width: max-content;
+            height: fit-content;
+            margin-top: 8px;
+        }
+        
+    </style>
+    <body>
+        
+        <form action="/login" method="post"></form>
+        <div class="form-group">
+            
+                <label for="email">Enter Your Email:</label>
+                <input class="l1" type="email"placeholder="Please Enter Your Email..." name="email"id="email"/>
+                <br/>
+                <label for="password">Enter Your Password:</label>
+                <input class="l1" type="password" name="password"id="password"/>
+                <br/>
+                <button type="submit" class="input">LOGIN</button>
+                <br>
+            <div class="Radio"><p><b class="title">How old are your?</p></b>
+            <ol>
+                <li><input type="radio" name="age" value="under24" checked> under 24</li>
+                <li><input type="radio" name="age" value="25-34" > 25 to3 4</li>
+                <li><input type="radio" name="age" value="35-44" > 35 to 44</li>
+                <li><input type="radio" name="age" value="over 45" > 45+</li>
+                </ol>
+            </div>
+            <div class="checkbox"><p><b class="title">Want type of Music do you listen to?</p></b>
+                <ul>
+                    <li><input type="checkbox" name="genre" value="punk" checked>Punk</li>
+                    <li><input type="checkbox" name="genre" value="indie" >Indie</li>
+                    <li><input type="checkbox" name="genre" value="hiphop" >Hiphop</li>
+                    <li><input type="checkbox" name="genre" value="rockabilly" >Rockabilly</li>
+                </ul>
+            </div>
+            <div class="Drop-down">
+                <p><b class="title">What is Your Favourite 80s band?</p></b>
+                <select name="EightiesFave" id="EightiesFave">
+                    <option >The Cure</option>
+                    <option >Cocteau Twins</option>
+                    <option >Tears fo Fears</option>
+                    <option >Thompson Twins</option>
+                    <option >Everything but the Girl</option>
+                    <option >Depeche Mode</option>
+                    <option >The Sniths</option>
+                    <option >New Order</option>
+                </select>
+                <div class="url"><p><input type="url" name="url"></p></div>
+                <div class="search">
+                    <p><input type="search-field" placeholder="Search"></p>
+                </div>
+            </div>
+            <div class="reset-button">
+                <p ><input class="button2" type="submit"> <input class="button2" type="reset" value="Start over"></p>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
